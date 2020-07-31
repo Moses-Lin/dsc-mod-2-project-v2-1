@@ -2,33 +2,51 @@
 # Module 2 Final Project
 
 
-## Introduction
+## Introduction:
 
-In this project, I have analyzed a dataset from Kaggle to investigate the relationship between a game's success and its various features. 
+In this project, I have analyzed a dataset from Kaggle about Steam Games to determine which factors are most pertinent to developing a game that is highly rated on Steam.
 
-## Questions to be answered:
+A multivariate linear regression model was created in order to investigate which features are most relevant to a high "rating". Pandas, matplotlib, and Seaborn was used to aid in creating visualizations and analyzation of the data.
 
-- Should new game devs develop mobile games that are free to play or pay to play?
-- If I choose to make a game pay to play, does it matter how expensive it is?
-- Should I cater to a specific age group when developing mobile games?
-- What are the most important features when developing a strategy game?
-- What types of microtransactions should I focus on the most?
+Scipy, sklearn, and statsmodels were used for hypothesis testing, modeling, and analysis of models.
+
+After the whole process, I was able to draw several meaningful conclusions from my data about what influences "rating" 
+
+
+## Data Overview:
+
+Dataset initially contained 27075 games, collected on May 28th, 2019.
+
+Target Variable (modified proportion of positive feedback over total feedback) was created using formula from: https://steamdb.info/blog/steamdb-rating/
+
+Some base features were used such as pricing, # of achievements, and average playtime
+Some features engineered were dummy variables of the various steam genres, categories, and available operating systems.
 
 ## Process:
 
 1. Data Cleaning
+2. Preprocessing
 2. Exploratory Data Analysis
 3. Feature Engineering
-4. Hypothesis Testing and Correlation
+4. Hypothesis Testing
 5. Modeling
 
 
-## Conclusions:
+## Recommendations:
 
-- It is recommended to develop free-to-play apps, as they are shown to receive a lot more ratings, increasing the chances of having a well rated app.
-- It is important to have a well-written description for the game, in order to both entice new users and to not overhype their expectations.
-- It is better to have frequent updates to the game over slower, possibly bigger updates.
-- Small sum in-app purchases, most specifically $0.99 options are likely the most profitable
+- Build games capable of running on multiple operating systems.
+- It is more favorable to make paid games than free-to-play. In-app Purchases are disliked.
+- Be an indie developer making casual single-player games, preferably with the Action, Adventure, Simulation, and/or Strategy genre tag(s)
+- Games with as much compatability with Steam tend to do better than stand-alone games, so for example encourage steam workshop modding, achievement hunting, collectibles/trading cards.
+- Release games when no other notable titles are coming out at the same time.
+
+
+## Future Work:
+
+- Work with data from other video game distribution services like the Epic Store, GOG.com, GamersGate.
+- Take a look into console or mobile game markets.
+- Focus entirely on Indie game developers as opposed to including big game companies.
+- Scrape for more data on Steam Store that may not have been covered here.
 
 
   
